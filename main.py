@@ -1,7 +1,7 @@
 import discord, aiohttp, os
 from discord.ext import commands
 
-client = commands.Bot(command_prefix="f54f2163542a9d0df01264dfe", intents=discord.Intents().all())
+client = commands.Bot(command_prefix="f54f2163542a9d0df01264dfe", intents=discord.Intents().all(), activity=discord.Activity(type=discord.ActivityType.watching, name="emoji.instatus.com"))
 BotWebhook = os.environ['BotWebhook']
 
 
