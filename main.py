@@ -11,7 +11,7 @@ async def on_ready():
   
 @client.event
 async def on_member_update(before, after):
-  if before.id == 437509885458907138 and before.status != after.status:
+  if before.id == 882567620077957122 and before.status != after.status:
     if str(after.status) == 'offline':
       async with aiohttp.ClientSession() as session:
         async with session.post(BotWebhook, json={
