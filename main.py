@@ -1,9 +1,7 @@
 import discord, aiohttp, os
 from discord.ext import commands
-from discord_slash import SlashCommand
 
 client = commands.Bot(command_prefix="f54f2163542a9d0df01264dfe", intents=discord.Intents().all())
-slash = SlashCommand(client, sync_commands=True)
 BotWebhook = os.environ['BotWebhook']
 
 
